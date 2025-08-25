@@ -4,6 +4,11 @@ import { redirect } from 'next/navigation';
 
 export default async function Home() {
   const user = await currentUser();
-  if (!user) return <Landingpage />;
+  if (!user)
+    return (
+      <div className='mx-20'>
+        <Landingpage />
+      </div>
+    );
   else redirect('/events');
 }
