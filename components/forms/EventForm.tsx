@@ -31,7 +31,7 @@ export default function EventForm({ event }: { event?: EventFormProps }) {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)}></form>
+      <form ></form>
     </Form>
   );
 }
